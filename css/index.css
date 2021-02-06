@@ -88,3 +88,12 @@ display: flex;
 flex-direction: column;
 width: 100%;
 }
+
+/**** Daily Setups *****/
+/******************/
+  
+
+img:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+}
