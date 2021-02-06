@@ -44,4 +44,11 @@ $(document).ready(function(){
         });
     })(jQuery);
 
+    $(".logos").click(function(){
+        link=$(this).attr("href");
+        window.open(link,"link" );
+
+        //return false;
+    });
+
 });
