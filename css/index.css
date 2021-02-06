@@ -92,8 +92,10 @@ width: 100%;
 /**** Daily Setups *****/
 /******************/
   
-
 img:hover{
     cursor:pointer;
     transform: scale(1.05);
 }
+=======
+}
+
