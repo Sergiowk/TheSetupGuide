@@ -13,7 +13,9 @@ $(document).ready(function(){
                 'styling': true,
                 'items': 8,
                 'items_per_row': 4,
-                'margin': 1 
+                'margin': 1,
+                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
+
             }),
             $.instagramFeed({
                 'username': 'tech4gaming',
@@ -26,7 +28,8 @@ $(document).ready(function(){
                 'styling': true,
                 'items': 8,
                 'items_per_row': 4,
-                'margin': 1 
+                'margin': 1,
+                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
             }),
             $.instagramFeed({
                 'username': 'thedreamsetup',
@@ -39,7 +42,8 @@ $(document).ready(function(){
                 'styling': true,
                 'items': 8,
                 'items_per_row': 4,
-                'margin': 1 
+                'margin': 1,
+                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
             });
         });
     })(jQuery);
