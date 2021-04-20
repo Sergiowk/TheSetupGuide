@@ -1,2 +1,2 @@
 # TheSetupGuide
- My First web page
+ My first Javascript web page
