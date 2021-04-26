@@ -1,52 +1,22 @@
 $(document).ready(function(){
+    var profile ='dailysetuptech'
+    const url = 'https://instagram28.p.rapidapi.com/user_info?user_name='+ profile;
+    const xrapidapihost = 'instagram28.p.rapidapi.com';
 
-    (function($){
-        $(window).on('load', function(){
-            $.instagramFeed({
-                'username': 'dailysetuptech',
-                'container': "#recommended1",
-                'display_profile': false,
-                'display_biography': false,
-                'display_gallery': true,
-                'display_captions': false,
-                'callback': null,
-                'styling': true,
-                'items': 8,
-                'items_per_row': 4,
-                'margin': 1,
-                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
 
-            }),
-            $.instagramFeed({
-                'username': 'tech4gaming',
-                'container': "#recommended2",
-                'display_profile': false,
-                'display_biography': false,
-                'display_gallery': true,
-                'display_captions': false,
-                'callback': null,
-                'styling': true,
-                'items': 8,
-                'items_per_row': 4,
-                'margin': 1,
-                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
-            }),
-            $.instagramFeed({
-                'username': 'thedreamsetup',
-                'container': "#recommended3",
-                'display_profile': false,
-                'display_biography': false,
-                'display_gallery': true,
-                'display_captions': false,
-                'callback': null,
-                'styling': true,
-                'items': 8,
-                'items_per_row': 4,
-                'margin': 1,
-                'host':'images' + ~~(Math.random() * 3333) +'-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=www.instagram.com/'
-            });
-        });
-    })(jQuery);
+    fetch(url, {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": xrapidapikey,
+            "x-rapidapi-host": xrapidapihost
+        }
+    })
+    .then(response => response.json())
+    .then(data=> 
+        console.log(data))
+    .catch(err => {
+        console.error(err);
+    });
 
     $(".logos").click(function(){
         link=$(this).attr("href");
